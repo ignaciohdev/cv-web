@@ -6,15 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ignacio Herrera | Analista Programador & Full Stack Developer</title>
   <meta name="description"
-    content="Currículum profesional de Ignacio Herrera Mejias, Analista Programador y Full Stack Developer especializado en React, TypeScript, Angular, Python (Django REST Framework) y arquitecturas web escalables." />
+    content="Currículum profesional de Ignacio Herrera Mejias, Analista Programador y Full Stack Developer especializado en React, TypeScript, Angular, Python (Django REST) y arquitecturas web modernas." />
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Inter & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <link rel="stylesheet" href="style.css" />
@@ -22,64 +23,80 @@
 
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- Ambient Glow Background Background -->
+  <div class="bg-glow-orb bg-glow-1"></div>
+  <div class="bg-glow-orb bg-glow-2"></div>
+
+  <!-- ===== HEADER / HERO ===== -->
   <header class="site-header">
     <div class="container">
-      <div class="header-inner">
+      <div class="header-card">
 
-        <!-- Columna Izquierda: Foto de Perfil -->
-        <div class="header-photo">
-          <img src="perfil.png" alt="Ignacio Herrera Mejias" class="profile-img" />
+        <!-- Columna 1: Foto con halo neon -->
+        <div class="header-photo-wrap">
+          <div class="header-photo">
+            <img src="perfil.png" alt="Ignacio Herrera Mejias" class="profile-img" />
+          </div>
+          <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span>Disponible</span>
+          </div>
         </div>
 
-        <!-- Columna Central: Identidad -->
+        <!-- Columna 2: Identidad y Cargo -->
         <div class="header-identity">
-          <span class="badge-disponible">
-            <i class="fa-solid fa-circle-dot badge-dot"></i>
-            DISPONIBLE PARA NUEVOS DESAFÍOS
-          </span>
+          <div class="badge-role">
+            <i class="fa-solid fa-code"></i>
+            <span>FULL STACK DEVELOPER</span>
+          </div>
           <h1 class="nombre-principal">
-            <span class="nombre-blanco">Ignacio</span>
-            <span class="nombre-cyan"> Herrera Mejias</span>
+            Ignacio <span class="text-accent">Herrera Mejias</span>
           </h1>
-          <p class="cargo">
-            <i class="fa-solid fa-code cargo-icon"></i>
-            Analista Programador | Full Stack Developer
+          <p class="cargo-title">
+            <i class="fa-solid fa-laptop-code"></i>
+            Analista Programador &middot; Especialista en Frontend & APIs REST
+          </p>
+          <p class="header-tagline">
+            Construyendo soluciones web escalables con arquitecturas modernas, tipado estricto y alto rendimiento.
           </p>
         </div>
 
-        <!-- Columna Derecha: Contacto -->
-        <div class="header-contacto">
-          <div class="contacto-grid">
-            <div class="contacto-item">
-              <i class="fa-solid fa-phone contacto-icon"></i>
-              <a href="tel:+56961631110" class="contacto-link">+56 9 6163 1110</a>
-            </div>
-            <div class="contacto-item">
-              <i class="fa-solid fa-envelope contacto-icon"></i>
-              <a href="mailto:Ignacio.AHM@outlook.com" class="contacto-link">Ignacio.AHM@outlook.com</a>
-            </div>
-            <div class="contacto-item">
-              <i class="fa-brands fa-linkedin contacto-icon"></i>
-              <a href="https://www.linkedin.com/in/devignacioh/" target="_blank" rel="noopener noreferrer"
-                class="contacto-link">devignacioh</a>
-            </div>
-            <div class="contacto-item">
-              <i class="fa-brands fa-github contacto-icon"></i>
-              <a href="https://github.com/ignaciohdev" target="_blank" rel="noopener noreferrer"
-                class="contacto-link">ignaciohdev</a>
-            </div>
-            <div class="contacto-item full-width">
-              <i class="fa-solid fa-location-dot contacto-icon"></i>
+        <!-- Columna 3: Contacto y CTA -->
+        <div class="header-contact-panel">
+          <h3 class="contact-panel-title"><i class="fa-solid fa-address-card"></i> Contacto Directo</h3>
+          <div class="contact-list">
+            <a href="https://www.linkedin.com/in/devignacioh/" target="_blank" rel="noopener noreferrer" class="contact-pill" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in contact-icon linkedin-icon"></i>
+              <span>linkedin.com/in/devignacioh</span>
+              <i class="fa-solid fa-arrow-up-right-from-square pill-arrow"></i>
+            </a>
+
+            <a href="https://github.com/ignaciohdev" target="_blank" rel="noopener noreferrer" class="contact-pill" title="GitHub">
+              <i class="fa-brands fa-github contact-icon"></i>
+              <span>github.com/ignaciohdev</span>
+              <i class="fa-solid fa-arrow-up-right-from-square pill-arrow"></i>
+            </a>
+
+            <a href="mailto:Ignacio.AHM@outlook.com" class="contact-pill" title="Correo">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <span>Ignacio.AHM@outlook.com</span>
+            </a>
+
+            <a href="tel:+56961631110" class="contact-pill" title="Teléfono">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <span>+56 9 6163 1110</span>
+            </a>
+
+            <div class="contact-pill static">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
               <span>Santiago, Chile</span>
             </div>
           </div>
 
-          <!-- Botón de acción para Imprimir / PDF -->
           <div class="header-actions">
-            <button type="button" class="btn-print" onclick="window.print()" title="Imprimir o guardar en PDF">
+            <button type="button" class="btn-primary-action" onclick="window.print()">
               <i class="fa-solid fa-file-pdf"></i>
-              <span>Imprimir / Guardar CV (PDF)</span>
+              <span>Descargar / Imprimir CV (PDF)</span>
             </button>
           </div>
         </div>
@@ -90,191 +107,239 @@
 
   <main>
 
-    <!-- ===== SECCIÓN: OBJETIVO / PERFIL PROFESIONAL ===== -->
-    <section class="section-objetivo" id="objetivo">
+    <!-- ===== SECCIÓN: PERFIL PROFESIONAL ===== -->
+    <section class="section-block" id="perfil">
       <div class="container">
-        <div class="objetivo-inner">
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> SOBRE MÍ</span>
+          <h2 class="section-heading">Perfil Profesional & Visión</h2>
+        </div>
 
-          <!-- Izquierda: Título -->
-          <div class="objetivo-titulo-col">
-            <span class="section-label">
-              <span class="label-line"></span>
-              PERFIL
-            </span>
-            <h2 class="objetivo-heading">Perfil Profesional<br />y Visión</h2>
+        <div class="card profile-card">
+          <div class="profile-quote-icon">
+            <i class="fa-solid fa-quote-left"></i>
           </div>
-
-          <!-- Derecha: Párrafo -->
-          <div class="objetivo-texto-col">
-            <div class="card objetivo-card">
-              <p class="objetivo-texto">
-                "Analista Programador y Desarrollador Full Stack con sólida experiencia en el diseño, desarrollo y
-                despliegue de aplicaciones web escalables y plataformas PWA. Especializado en la creación de
-                arquitecturas frontend modernas y reactivas con <strong>React 18, TypeScript, Tailwind CSS</strong> y
-                gestión de estado con <strong>Zustand / TanStack Query</strong>, además de experiencia con
-                <strong>Angular</strong>. Dominio en el desarrollo y refactorización de servicios backend y APIs REST
-                con <strong>Python (Django REST Framework)</strong>, <strong>PostgreSQL</strong> y
-                <strong>MongoDB Atlas</strong>. Proactivo, metódico y orientado a implementar código limpio y
-                mantenible en células de trabajo ágil."
-              </p>
-            </div>
+          <div class="profile-text-content">
+            <p class="profile-paragraph">
+              <strong>Analista Programador y Desarrollador Full Stack</strong> con experiencia demostrada en el ciclo completo de desarrollo de aplicaciones web de producción y plataformas PWA. Especializado en la arquitectura e implementación de interfaces reactivas de alto desempeño con <strong>React 18, TypeScript, Tailwind CSS</strong> y gestión de estado mediante <strong>Zustand y TanStack Query</strong>, así como experiencia en <strong>Angular</strong>.
+            </p>
+            <p class="profile-paragraph">
+              En el backend, domino el diseño, consumo y refactorización de servicios RESTful y microservicios con <strong>Python (Django REST Framework)</strong>, modelamiento relacional en <strong>PostgreSQL</strong> y bases de datos NoSQL con <strong>MongoDB Atlas</strong>. Me destaco por aplicar buenas prácticas (Clean Code, tipado estricto, modularidad) y trabajo ágil colaborativo bajo control de versiones Git Flow.
+            </p>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ===== SECCIÓN: EXPERIENCIA PROFESIONAL ===== -->
-    <section class="section-experiencia" id="experiencia">
+    <!-- ===== SECCIÓN: EXPERIENCIA LABORAL ===== -->
+    <section class="section-block" id="experiencia">
       <div class="container">
-        <div class="section-header-wrap">
-          <span class="section-label">
-            <span class="label-line"></span>
-            TRAYECTORIA
-          </span>
-          <h2 class="section-main-heading">Experiencia Laboral</h2>
+        <div class="section-title-wrap">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> TRAYECTORIA</span>
+          <h2 class="section-heading">Experiencia Laboral</h2>
         </div>
 
-        <div class="experiencia-container">
-          <div class="card experiencia-card">
+        <div class="experience-card-wrapper">
+          <div class="card experience-card">
+            
+            <!-- Encabezado de la Experiencia -->
             <div class="exp-header">
-              <div class="exp-role-wrap">
-                <div class="exp-badge-company">
-                  <i class="fa-solid fa-briefcase"></i>
+              <div class="exp-company-info">
+                <div class="company-badge">
+                  <i class="fa-solid fa-building"></i>
                   <span>Virtualizar SpA</span>
                 </div>
-                <h3 class="exp-title">Desarrollador Frontend & Apoyo Backend</h3>
-                <p class="exp-project-name">
-                  <i class="fa-solid fa-laptop-code"></i> Proyecto: <strong>Saludaldia</strong> (Plataforma Web PWA para gestión e historial médico)
-                </p>
+                <h3 class="exp-role-title">Desarrollador Frontend & Apoyo Backend</h3>
+                <div class="exp-project-badge">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                  <span>Proyecto: <strong>Saludaldia</strong> (Plataforma Web PWA para Salud Digital)</span>
+                </div>
               </div>
-              <div class="exp-meta">
-                <span class="exp-date"><i class="fa-regular fa-calendar-days"></i> Junio 2026 — Agosto 2026</span>
-                <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Santiago, Chile (Célula Ágil)</span>
+
+              <div class="exp-dates-box">
+                <div class="exp-date-pill">
+                  <i class="fa-regular fa-calendar-check"></i>
+                  <span>Junio 2026 — Agosto 2026</span>
+                </div>
+                <div class="exp-location-pill">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Santiago, Chile &middot; Célula Ágil</span>
+                </div>
               </div>
             </div>
 
-            <div class="exp-body">
-              <ul class="exp-responsibilities">
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Liderazgo del desarrollo Frontend:</strong> Construcción e implementación integral de la interfaz de usuario para la Progressive Web App (PWA) de Saludaldia utilizando <strong>React 18, TypeScript, Vite y Tailwind CSS</strong>.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Gestión de Estado & Rendimiento:</strong> Implementación de arquitectura de estado global desacoplada mediante <strong>Zustand</strong> y optimización de peticiones asíncronas / almacenamiento en caché con <strong>TanStack Query</strong>.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Integración de APIs y Seguridad:</strong> Consumo e integración de endpoints RESTful autenticados mediante tokens <strong>JWT (SimpleJWT)</strong> provistos por el backend en Django REST Framework.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Digitalización & Servicios Especializados:</strong> Integración de <strong>Scanbot Web SDK</strong> para la digitalización y escaneo inteligente de recetas y documentos médicos de pacientes.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Soporte Backend y Refactorización:</strong> Apoyo activo en la refactorización de código backend en <strong>Python 3.12 / Django 5.1</strong>, optimización de modelos y consultas en base de datos relacional <strong>PostgreSQL</strong>.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check exp-check"></i>
-                  <span><strong>Colaboración Interdisciplinaria:</strong> Trabajo en equipo bajo metodología Git Flow (Pull Requests, Code Reviews) coordinado con diseñadores UI (Figma) y líderes de célula.</span>
-                </li>
-              </ul>
+            <!-- Grilla de Logros Clave (UX Bento) -->
+            <div class="achievements-grid">
+              
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Liderazgo del Frontend PWA</h4>
+                  <p class="achieve-desc">Construcción completa de la interfaz de usuario en <strong>React 18 + TypeScript + Vite + Tailwind CSS</strong>, asegurando una experiencia interactiva, responsiva y offline-ready.</p>
+                </div>
+              </div>
 
-              <div class="exp-tech-tags">
-                <span class="tech-tag">React 18</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Tailwind CSS</span>
-                <span class="tech-tag">Zustand</span>
-                <span class="tech-tag">TanStack Query</span>
-                <span class="tech-tag">PWA</span>
-                <span class="tech-tag">Python 3.12</span>
-                <span class="tech-tag">Django REST</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Supabase Storage</span>
-                <span class="tech-tag">Scanbot SDK</span>
-                <span class="tech-tag">Git / GitHub</span>
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Gestión de Estado & Rendimiento</h4>
+                  <p class="achieve-desc">Diseño de arquitectura de estado global desacoplada con <strong>Zustand</strong> y caché inteligente de peticiones asíncronas mediante <strong>TanStack Query</strong>.</p>
+                </div>
+              </div>
+
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Integración de APIs & Seguridad</h4>
+                  <p class="achieve-desc">Consumo e integración de endpoints RESTful seguros mediante autenticación con tokens <strong>JWT (SimpleJWT)</strong> provistos por Django REST Framework.</p>
+                </div>
+              </div>
+
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-camera-retro"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Digitalización con Scanbot SDK</h4>
+                  <p class="achieve-desc">Implementación del módulo de escaneo y procesamiento inteligente de recetas y documentos médicos integrando <strong>Scanbot Web SDK</strong>.</p>
+                </div>
+              </div>
+
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Soporte Backend & Refactorización</h4>
+                  <p class="achieve-desc">Refactorización de código backend en <strong>Python 3.12 / Django 5.1</strong>, optimización de endpoints y consultas eficientes en <strong>PostgreSQL</strong>.</p>
+                </div>
+              </div>
+
+              <div class="achievement-item">
+                <div class="achieve-icon-wrap">
+                  <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <div class="achieve-content">
+                  <h4 class="achieve-title">Trabajo Colaborativo & Git Flow</h4>
+                  <p class="achieve-desc">Integración fluida con diseño UI en <strong>Figma</strong> y célula de desarrollo mediante revisiones de código y Pull Requests en GitHub.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer con Tecnologías -->
+            <div class="exp-tech-footer">
+              <span class="tech-footer-label"><i class="fa-solid fa-microchip"></i> Tecnologías Utilizadas:</span>
+              <div class="tech-pills-row">
+                <span class="tech-pill-highlight">React 18</span>
+                <span class="tech-pill-highlight">TypeScript</span>
+                <span class="tech-pill-highlight">Tailwind CSS</span>
+                <span class="tech-pill-highlight">Zustand</span>
+                <span class="tech-pill-highlight">TanStack Query</span>
+                <span class="tech-pill">Python 3.12</span>
+                <span class="tech-pill">Django REST</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Supabase</span>
+                <span class="tech-pill">Scanbot SDK</span>
+                <span class="tech-pill">PWA</span>
+                <span class="tech-pill">Git / GitHub</span>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== SECCIÓN: PROYECTOS DESTACADOS ===== -->
-    <section class="section-proyectos" id="proyectos">
+    <section class="section-block" id="proyectos">
       <div class="container">
-        <div class="stack-header">
-          <span class="section-label centered">
-            <span class="label-line"></span>
-            PORTAFOLIO
-            <span class="label-line"></span>
-          </span>
-          <h2 class="stack-heading">Proyectos Destacados</h2>
-          <p class="stack-sub">Soluciones reales desarrolladas con foco en arquitectura limpia, usabilidad y escalabilidad.</p>
+        <div class="section-title-wrap text-center">
+          <span class="section-tag centered"><i class="fa-solid fa-rocket"></i> PORTAFOLIO</span>
+          <h2 class="section-heading">Proyectos Destacados</h2>
+          <p class="section-subtitle">Sistemas construidos con arquitectura limpia, escalabilidad y foco en experiencia de usuario.</p>
         </div>
 
-        <div class="proyectos-grid">
+        <div class="projects-showcase-grid">
 
-          <!-- Proyecto 1: Saludaldia -->
-          <div class="card proyecto-card">
-            <div class="proyecto-header">
-              <div class="proyecto-icon">
-                <i class="fa-solid fa-heart-pulse"></i>
+          <!-- Card Proyecto 1: Saludaldia -->
+          <div class="card project-showcase-card">
+            <div class="project-card-top">
+              <div class="project-icon-box project-icon-health">
+                <i class="fa-solid fa-notes-medical"></i>
               </div>
-              <div class="proyecto-status"><i class="fa-solid fa-circle-check"></i> Producción / PWA</div>
+              <div class="project-badge-status status-live">
+                <span class="dot-live"></span>
+                <span>PWA / En Producción</span>
+              </div>
             </div>
-            <h3 class="proyecto-title">Saludaldia — Historial Médico Digital</h3>
-            <p class="proyecto-desc">
-              Plataforma web PWA para centralizar y compartir fichas clínicas, recetas y exámenes médicos entre pacientes y
-              médicos con interfaz ágil y módulos de digitalización documental.
+
+            <h3 class="project-card-title">Saludaldia — Historial Médico Digital</h3>
+            <p class="project-card-description">
+              Plataforma web PWA para que pacientes y profesionales de la salud en Chile centralicen, organicen y compartan su historial clínico, recetas y exámenes médicos de forma rápida y segura.
             </p>
-            <div class="proyecto-highlights">
-              <span><i class="fa-solid fa-shield-halved"></i> Auth JWT & Seguridad</span>
-              <span><i class="fa-solid fa-mobile-screen"></i> PWA Offline-ready</span>
-              <span><i class="fa-solid fa-camera"></i> Escaneo Scanbot SDK</span>
+
+            <div class="project-features-list">
+              <div class="feature-chip"><i class="fa-solid fa-lock"></i> Auth JWT & RBAC</div>
+              <div class="feature-chip"><i class="fa-solid fa-wifi"></i> Soporte Offline PWA</div>
+              <div class="feature-chip"><i class="fa-solid fa-barcode"></i> Escaneo Scanbot SDK</div>
+              <div class="feature-chip"><i class="fa-solid fa-cloud-arrow-up"></i> Supabase Storage</div>
             </div>
-            <div class="proyecto-techs">
-              <span class="tech-tag">React 18</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Tailwind</span>
-              <span class="tech-tag">Django REST</span>
-              <span class="tech-tag">PostgreSQL</span>
+
+            <div class="project-tech-tags">
+              <span class="tag-sm">React 18</span>
+              <span class="tag-sm">TypeScript</span>
+              <span class="tag-sm">Tailwind CSS</span>
+              <span class="tag-sm">Zustand</span>
+              <span class="tag-sm">Django REST</span>
+              <span class="tag-sm">PostgreSQL</span>
             </div>
           </div>
 
-          <!-- Proyecto 2: Libro de Clases Digital 2.0 -->
-          <div class="card proyecto-card">
-            <div class="proyecto-header">
-              <div class="proyecto-icon">
-                <i class="fa-solid fa-school"></i>
+          <!-- Card Proyecto 2: Libro de Clases Digital -->
+          <div class="card project-showcase-card">
+            <div class="project-card-top">
+              <div class="project-icon-box project-icon-school">
+                <i class="fa-solid fa-graduation-cap"></i>
               </div>
-              <div class="proyecto-status"><i class="fa-solid fa-cloud"></i> SaaS Escolar</div>
+              <div class="project-badge-status status-saas">
+                <i class="fa-solid fa-cloud"></i>
+                <span>SaaS Académico</span>
+              </div>
             </div>
-            <h3 class="proyecto-title">Libro de Clases Digital 2.0</h3>
-            <p class="proyecto-desc">
-              Sistema integral SaaS para gestión académica: asistencia diaria, bitácora de convivencia escolar y panel de
-              rendimiento para apoderados y docentes con analítica en tiempo real.
+
+            <h3 class="project-card-title">Libro de Clases Digital 2.0</h3>
+            <p class="project-card-description">
+              Sistema integral SaaS diseñado para modernizar la gestión escolar: control de asistencia diario, bitácora de convivencia escolar y panel de rendimiento estudiantil con visualización estilo Bento.
             </p>
-            <div class="proyecto-highlights">
-              <span><i class="fa-solid fa-users-gear"></i> Roles RBAC</span>
-              <span><i class="fa-solid fa-chart-pie"></i> Visualización Bento</span>
-              <span><i class="fa-solid fa-database"></i> MongoDB Atlas</span>
+
+            <div class="project-features-list">
+              <div class="feature-chip"><i class="fa-solid fa-users"></i> Multi-rol (Admin/Profe/Apoderado)</div>
+              <div class="feature-chip"><i class="fa-solid fa-chart-line"></i> Analítica en Tiempo Real</div>
+              <div class="feature-chip"><i class="fa-solid fa-database"></i> MongoDB Atlas NoSQL</div>
+              <div class="feature-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> UI Glassmorphism</div>
             </div>
-            <div class="proyecto-techs">
-              <span class="tech-tag">Angular 21</span>
-              <span class="tech-tag">Angular Material</span>
-              <span class="tech-tag">Django 6.0</span>
-              <span class="tech-tag">MongoDB Atlas</span>
-              <span class="tech-tag">SimpleJWT</span>
+
+            <div class="project-tech-tags">
+              <span class="tag-sm">Angular 21</span>
+              <span class="tag-sm">Angular Material</span>
+              <span class="tag-sm">Django 6.0</span>
+              <span class="tag-sm">MongoDB Atlas</span>
+              <span class="tag-sm">SimpleJWT</span>
             </div>
-            <div class="proyecto-actions">
-              <a href="https://ignaciohdev.github.io/proyecto-escolar/" target="_blank" rel="noopener noreferrer" class="btn-proyecto">
+
+            <div class="project-card-actions">
+              <a href="https://ignaciohdev.github.io/proyecto-escolar/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Demo Online
               </a>
-              <a href="https://github.com/ignaciohdev/proyecto-escolar" target="_blank" rel="noopener noreferrer" class="btn-proyecto-secondary">
-                <i class="fa-brands fa-github"></i> Código
+              <a href="https://github.com/ignaciohdev/proyecto-escolar" target="_blank" rel="noopener noreferrer" class="btn-project-code">
+                <i class="fa-brands fa-github"></i> Ver Código
               </a>
             </div>
           </div>
@@ -284,128 +349,128 @@
     </section>
 
     <!-- ===== SECCIÓN: STACK TECNOLÓGICO ===== -->
-    <section class="section-stack" id="stack">
+    <section class="section-block" id="stack">
       <div class="container">
-
-        <!-- Encabezado centralizado -->
-        <div class="stack-header">
-          <span class="section-label centered">
-            <span class="label-line"></span>
-            HABILIDADES TÉCNICAS
-            <span class="label-line"></span>
-          </span>
-          <h2 class="stack-heading">Stack Tecnológico</h2>
-          <p class="stack-sub">Dominio integral de herramientas modernas para el desarrollo Full Stack de aplicaciones robustas.</p>
+        <div class="section-title-wrap text-center">
+          <span class="section-tag centered"><i class="fa-solid fa-layer-group"></i> COMPETENCIAS</span>
+          <h2 class="section-heading">Stack Tecnológico</h2>
+          <p class="section-subtitle">Herramientas y tecnologías dominadas para la ingeniería de software moderna.</p>
         </div>
 
-        <!-- Grid de Tarjetas Desplegables -->
-        <div class="stack-grid stack-grid-4">
+        <div class="skills-grid-4">
 
-          <!-- Tarjeta: Frontend Moderno -->
-          <details class="card stack-card" open>
-            <summary class="stack-card-header">
-              <div class="stack-icon-wrap">
+          <!-- Categoría 1: Frontend -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-cyan">
                 <i class="fa-solid fa-desktop"></i>
               </div>
-              <span class="stack-card-title">Frontend</span>
-              <i class="fa-solid fa-chevron-down stack-chevron"></i>
-            </summary>
-            <ul class="stack-list">
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> React 18 / Hooks</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> TypeScript & JavaScript ES6+</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Angular & Angular Material</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Tailwind CSS & Vanilla CSS</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Zustand & TanStack Query</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> PWA & Responsive Design</li>
+              <h3 class="skill-cat-title">Frontend Moderno</h3>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="skill-dot"></span> React 18 & Hooks</li>
+              <li><span class="skill-dot"></span> TypeScript & JS (ES6+)</li>
+              <li><span class="skill-dot"></span> Angular & Angular Material</li>
+              <li><span class="skill-dot"></span> Tailwind CSS & Vanilla CSS</li>
+              <li><span class="skill-dot"></span> Zustand & TanStack Query</li>
+              <li><span class="skill-dot"></span> PWA & Responsive Design</li>
             </ul>
-          </details>
+          </div>
 
-          <!-- Tarjeta: Backend & APIs -->
-          <details class="card stack-card" open>
-            <summary class="stack-card-header">
-              <div class="stack-icon-wrap">
+          <!-- Categoría 2: Backend -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-purple">
                 <i class="fa-solid fa-server"></i>
               </div>
-              <span class="stack-card-title">Backend & APIs</span>
-              <i class="fa-solid fa-chevron-down stack-chevron"></i>
-            </summary>
-            <ul class="stack-list">
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Python 3.12 (Django 5/6)</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Django REST Framework</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Arquitectura REST & JWT</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> C# / ASP.NET</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> PHP & Java (POO)</li>
+              <h3 class="skill-cat-title">Backend & APIs</h3>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="skill-dot"></span> Python 3.12 (Django 5/6)</li>
+              <li><span class="skill-dot"></span> Django REST Framework</li>
+              <li><span class="skill-dot"></span> Arquitectura REST & JWT</li>
+              <li><span class="skill-dot"></span> C# / ASP.NET</li>
+              <li><span class="skill-dot"></span> PHP & Java (POO)</li>
+              <li><span class="skill-dot"></span> Clean Architecture & Microservicios</li>
             </ul>
-          </details>
+          </div>
 
-          <!-- Tarjeta: Bases de Datos & Cloud -->
-          <details class="card stack-card" open>
-            <summary class="stack-card-header">
-              <div class="stack-icon-wrap">
+          <!-- Categoría 3: Bases de Datos -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-green">
                 <i class="fa-solid fa-database"></i>
               </div>
-              <span class="stack-card-title">Bases de Datos & Cloud</span>
-              <i class="fa-solid fa-chevron-down stack-chevron"></i>
-            </summary>
-            <ul class="stack-list">
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> PostgreSQL (Modelado & Queries)</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> MongoDB Atlas (NoSQL)</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> MySQL & SQL Server</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Supabase Storage</li>
+              <h3 class="skill-cat-title">Bases de Datos & Cloud</h3>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="skill-dot"></span> PostgreSQL (Relacional)</li>
+              <li><span class="skill-dot"></span> MongoDB Atlas (NoSQL)</li>
+              <li><span class="skill-dot"></span> MySQL & SQL Server</li>
+              <li><span class="skill-dot"></span> Supabase Storage</li>
+              <li><span class="skill-dot"></span> Modelamiento de Datos & Optimización</li>
             </ul>
-          </details>
+          </div>
 
-          <!-- Tarjeta: Herramientas & Métodos -->
-          <details class="card stack-card" open>
-            <summary class="stack-card-header">
-              <div class="stack-icon-wrap">
+          <!-- Categoría 4: Herramientas -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon icon-amber">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
               </div>
-              <span class="stack-card-title">Herramientas & Métodos</span>
-              <i class="fa-solid fa-chevron-down stack-chevron"></i>
-            </summary>
-            <ul class="stack-list">
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Git / GitHub (Git Flow & PRs)</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Vite & Node.js Tooling</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Scanbot Web SDK</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Postman / API Testing</li>
-              <li><i class="fa-solid fa-chevron-right list-arrow"></i> Figma (Diseño UI a Código)</li>
+              <h3 class="skill-cat-title">Herramientas & Métodos</h3>
+            </div>
+            <ul class="skill-items-list">
+              <li><span class="skill-dot"></span> Git / GitHub (Git Flow & PRs)</li>
+              <li><span class="skill-dot"></span> Vite & Node.js Tooling</li>
+              <li><span class="skill-dot"></span> Scanbot Web SDK</li>
+              <li><span class="skill-dot"></span> Postman / Testing de APIs</li>
+              <li><span class="skill-dot"></span> Figma (Diseño UI a Código)</li>
+              <li><span class="skill-dot"></span> Scrum & Metodologías Ágiles</li>
             </ul>
-          </details>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ===== FOOTER VISUAL: FORMACIÓN + COMPETENCIAS ===== -->
-    <section class="section-footer-visual" id="formacion">
+    <!-- ===== SECCIÓN: FORMACIÓN & COMPETENCIAS ===== -->
+    <section class="section-block" id="formacion">
       <div class="container">
-        <div class="footer-visual-grid">
+        <div class="bento-two-col">
 
           <!-- Columna Izquierda: Formación Académica -->
-          <div class="col-formacion">
-            <h2 class="col-heading">
-              <i class="fa-solid fa-graduation-cap col-heading-icon"></i>
-              Formación Académica
-            </h2>
-            <div class="card timeline-card">
-              <div class="timeline">
+          <div class="bento-col">
+            <div class="section-title-wrap">
+              <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> ESTUDIOS</span>
+              <h2 class="section-heading">Formación Académica</h2>
+            </div>
 
-                <div class="timeline-item">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <span class="timeline-year">2024 — 2026 · Egresado (En trámite de titulación)</span>
-                    <h3 class="timeline-titulo">Analista Programador</h3>
-                    <p class="timeline-institucion">Instituto Profesional de Chile (IPChile)</p>
+            <div class="card timeline-card">
+              <div class="timeline-tree">
+
+                <!-- Item 1: Analista Programador -->
+                <div class="timeline-node">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                  </div>
+                  <div class="timeline-info">
+                    <span class="timeline-badge-year">2024 — 2026 &middot; Egresado (En espera de título)</span>
+                    <h3 class="timeline-degree">Analista Programador</h3>
+                    <p class="timeline-institution"><i class="fa-solid fa-landmark"></i> Instituto Profesional de Chile (IPChile)</p>
+                    <p class="timeline-extra">Formación especializada en ingeniería de software, arquitectura de sistemas, bases de datos y desarrollo web avanzado.</p>
                   </div>
                 </div>
 
-                <div class="timeline-item">
-                  <div class="timeline-dot"></div>
-                  <div class="timeline-content">
-                    <span class="timeline-year">2014</span>
-                    <h3 class="timeline-titulo">Licencia de Educación Media Científico-Humanista</h3>
-                    <p class="timeline-institucion">Liceo Javiera Carrera</p>
+                <!-- Item 2: Enseñanza Media -->
+                <div class="timeline-node">
+                  <div class="timeline-marker">
+                    <span class="marker-dot"></span>
+                  </div>
+                  <div class="timeline-info">
+                    <span class="timeline-badge-year">2014</span>
+                    <h3 class="timeline-degree">Licencia de Educación Media Científico-Humanista</h3>
+                    <p class="timeline-institution"><i class="fa-solid fa-school"></i> Liceo Javiera Carrera</p>
                   </div>
                 </div>
 
@@ -413,51 +478,49 @@
             </div>
           </div>
 
-          <!-- Columna Derecha: Competencias Clave -->
-          <div class="col-competencias">
-            <h2 class="col-heading">
-              <i class="fa-solid fa-layer-group col-heading-icon"></i>
-              Competencias Clave
-            </h2>
+          <!-- Columna Derecha: Competencias Clave & Filosofía -->
+          <div class="bento-col">
+            <div class="section-title-wrap">
+              <span class="section-tag"><i class="fa-solid fa-brain"></i> HABILIDADES</span>
+              <h2 class="section-heading">Competencias & Enfoque</h2>
+            </div>
 
-            <div class="pills-grid">
-              <div class="pill">
-                <i class="fa-solid fa-cubes pill-icon"></i>
-                Arquitectura Web SPA/PWA
+            <div class="competencies-grid">
+              <div class="comp-badge">
+                <i class="fa-solid fa-cubes-stacked comp-icon"></i>
+                <span>Arquitectura SPA / PWA</span>
               </div>
-              <div class="pill">
-                <i class="fa-solid fa-diagram-project pill-icon"></i>
-                Modelamiento de Datos SQL / NoSQL
+              <div class="comp-badge">
+                <i class="fa-solid fa-diagram-project comp-icon"></i>
+                <span>Modelamiento SQL / NoSQL</span>
               </div>
-              <div class="pill">
-                <i class="fa-solid fa-plug pill-icon"></i>
-                Consumo e Integración RESTful
+              <div class="comp-badge">
+                <i class="fa-solid fa-plug-circle-check comp-icon"></i>
+                <span>Integración de APIs REST</span>
               </div>
-              <div class="pill">
-                <i class="fa-solid fa-people-group pill-icon"></i>
-                Trabajo en Células Ágiles
+              <div class="comp-badge">
+                <i class="fa-solid fa-people-roof comp-icon"></i>
+                <span>Trabajo en Células Ágiles</span>
               </div>
-              <div class="pill">
-                <i class="fa-solid fa-magnifying-glass pill-icon"></i>
-                Resolución de Problemas
+              <div class="comp-badge">
+                <i class="fa-solid fa-lightbulb comp-icon"></i>
+                <span>Resolución de Problemas</span>
               </div>
-              <div class="pill">
-                <i class="fa-solid fa-shuffle pill-icon"></i>
-                Adaptabilidad & Aprendizaje Rápido
+              <div class="comp-badge">
+                <i class="fa-solid fa-arrows-spin comp-icon"></i>
+                <span>Adaptabilidad Técnica</span>
               </div>
             </div>
 
-            <!-- Filosofía de Trabajo -->
-            <details class="card filosofia-card" open>
-              <summary class="filosofia-header">
-                <i class="fa-solid fa-chevron-right filosofia-chevron"></i>
-                <span>Filosofía de Desarrollo</span>
-              </summary>
-              <p class="filosofia-texto">
-                Enfoque metódico basado en arquitecturas desacopladas, código limpio y tipado estricto, priorizando
-                el rendimiento, la mantenibilidad a largo plazo y una experiencia de usuario impecable tanto en frontend como en backend.
+            <div class="card philosophy-box">
+              <div class="philosophy-header">
+                <i class="fa-solid fa-code-branch philosophy-icon"></i>
+                <h4>Filosofía de Desarrollo</h4>
+              </div>
+              <p class="philosophy-desc">
+                Enfoque metódico basado en <strong>arquitecturas desacopladas</strong>, <strong>código limpio</strong> y <strong>tipado estricto</strong>. Priorizo la escalabilidad, la mantenibilidad a largo plazo y una experiencia de usuario ágil y libre de fricciones.
               </p>
-            </details>
+            </div>
 
           </div>
 
@@ -468,12 +531,17 @@
   </main>
 
   <!-- ===== FOOTER FINAL ===== -->
-  <footer class="site-footer-bar">
+  <footer class="site-footer">
     <div class="container">
-      <p class="footer-copy">
-        <i class="fa-solid fa-code"></i>
-        Diseñado y desarrollado por <strong>Ignacio Herrera</strong> · 2026
-      </p>
+      <div class="footer-content">
+        <p class="footer-text">
+          <i class="fa-solid fa-terminal"></i> Diseñado & Desarrollado por <strong>Ignacio Herrera Mejias</strong> &middot; 2026
+        </p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/devignacioh/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/ignaciohdev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
     </div>
   </footer>
 
